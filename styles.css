@@ -15,6 +15,22 @@ body {
 .sidebar {
     background-color: yellowgreen;
     grid-row: 1 / -1;
+
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr 5fr;
+    gap: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.pages {
+    
+    display: grid;
+
+
 }
 
 
