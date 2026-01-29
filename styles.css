@@ -2,8 +2,8 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
-
+    grid-template-rows: .8fr 4fr;
+    
 }
 
 
@@ -21,6 +21,21 @@ body {
 
 .content {
     background-color: pink;
+
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+.projects {
+    background-color: aqua;
+    grid-row: 1 / -1;
+
+    display: grid;
+    grid-template-rows: .8fr 16fr;
+
     
 }
 
@@ -30,3 +45,10 @@ body {
 }
 
 
+.projects > .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: red;
+    gap: 15px;
+    
+}
