@@ -36,8 +36,32 @@ a {
 
 .header {
     background-color: blueviolet;
+    display: grid;
+    
 }
 
+.header > div {
+    margin: 10px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+input[type="search"] {
+    width: 55%;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.header-bottom > div + div, .header-top > div + div {
+    text-align: end;
+}
 
 .content {
     background-color: pink;
