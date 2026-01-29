@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+
+}
+
+
+
+.sidebar {
+    background-color: yellowgreen;
+    grid-row: 1 / -1;
+}
+
+
+.header {
+    background-color: blueviolet;
+}
+
+
+.content {
+    background-color: pink;
+    
+}
+
+.card {
+    background-color: antiquewhite;
+    
+}
+
+
